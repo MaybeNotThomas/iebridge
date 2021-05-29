@@ -1,0 +1,7 @@
+{
+  "name": "IEBridge",
+  "creator": "idkwhat2plus2is",
+  "version": "1.0.0",
+  "description": "make ice essence bridge bot look nicer",
+  "entry": "index.js"
+}
