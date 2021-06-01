@@ -58,3 +58,38 @@ register("command", () => {
 register("command", (...args) => {
   ChatLib.simulateChat(args.slice(0, args.length).join(" ")+" &r&ejoined the guild!&r")
 }).setName("guild_join")
+
+register("command", () => {
+  ChatLib.say("/party IceEssenceBot")
+  setTimeout(() => {
+    ChatLib.say("/gc i!fr")
+  }, 500)
+}).setName("icefrag")
+
+register("command", () => {
+  ChatLib.say("/party IceEssenceBot")
+  setTimeout(() => {
+    ChatLib.say("/gc i!fr Simp")
+  }, 500)
+}).setName("icefrag1")
+
+register("command", () => {
+  ChatLib.say("/party IceEssenceBot")
+  setTimeout(() => {
+    ChatLib.say("/gc i!fr Simp 4 Klaas :D")
+  }, 500)
+}).setName("icefrag2")
+
+register("command", () => {
+  ChatLib.say("/party IceEssenceBot")
+  setTimeout(() => {
+    ChatLib.say("/gc i!fr / / / / /")
+  }, 500)
+}).setName("icefrag3")
+
+register("command", () => {
+  ChatLib.say("/party IceEssenceBot")
+  setTimeout(() => {
+    ChatLib.say("/gc i!fr Simping for Klaas rn very pog")
+  }, 500)
+}).setName("icefrag4")
