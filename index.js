@@ -4,6 +4,9 @@ let alon_ranks = JSON.parse(FileLib.getUrlContent("https://raw.githubusercontent
 
 register("chat", function(event) {
   let msg = ChatLib.getChatMessage(event, true).toString();
+  if (msg.includes("&ejoined the guild!")) {
+    ChatLib.say("/gc Hello! Welcome to the Guild! We have a custom ct module (/ct import IEBridge) and a Guild only fragbot. You can use the fragbot by partying the bot and typing i!fr in Guild chat. Enjoy your stay!")
+  }
   if(msg.removeFormatting().startsWith("Guild > ")){
     cancel(event)
     //update name list
@@ -45,8 +48,6 @@ register("chat", function(event) {
     //  }
     //}
     ChatLib.chat(msg)
-  } else if (msg.includes("&ejoined the guild!")) {
-    ChatLib.say("/gc Hello! Welcome to the Guild! We have a custom ct module (/ct import IEBridge) and a Guild only fragbot. You can use the fragbot by partying the bot and typing i!fr in Guild chat. Enjoy your stay!")
   }
 })
 
