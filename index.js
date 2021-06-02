@@ -1,6 +1,24 @@
 let ranks = JSON.parse(FileLib.getUrlContent("https://raw.githubusercontent.com/MaybeNotThomas/iebridge/main/ranks.json"))
 let names = JSON.parse(FileLib.getUrlContent("https://raw.githubusercontent.com/MaybeNotThomas/iebridge/main/names.json"))
 let alon_ranks = JSON.parse(FileLib.getUrlContent("https://raw.githubusercontent.com/alon1396/AlonAddons/main/chatreplace.json"))
+IEKeyBinds = new IEKeyBindsFunc();
+
+register("tick", function() {
+	IEKeyBinds.tick();
+})
+
+function IEKeyBindsFunc() {
+	this.key = new KeyBind("Fragrun", 0,"IEBridge");
+
+	this.tick = function() {
+		if (this.key.isPressed()) {
+			ChatLib.command("party IceEssenceBot")
+			setTimeout(() => {
+				ChatLib.command("gc i!fr")
+			}, 500)
+		}
+	}
+}
 
 register("chat", function(event) {
   let msg = ChatLib.getChatMessage(event, true).toString();
