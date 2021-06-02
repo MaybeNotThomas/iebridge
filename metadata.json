@@ -2,6 +2,6 @@
   "name": "IEBridge",
   "creator": "idkwhat2plus2is",
   "version": "1.0.3",
-  "description": "Chat Triggers module for the IceEssenceGuild including Custom Ranks MVP++ and gifter Emoji's only usable in Guild chat and only visible by other people with this Module also the /icefrag, /icefrag1, /icefrag2, /icefrag3, /icefrag4 commands to use the fragrun bot!",
+  "description": "Chat Triggers module for the Ice Essence Guild including Custom Ranks MVP++ and gifter Emoji's only usable in Guild chat and only visible by other people with this Module also the /icefrag, /icefrag1, /icefrag2, /icefrag3, /icefrag4 commands to use the fragrun bot!",
   "entry": "index.js"
 }
