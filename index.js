@@ -65,6 +65,8 @@ register("chat", function(event) {
     ChatLib.chat(msg)
   } else if (msg.includes("&ejoined the guild!")) {
     ChatLib.say("/gc Hello! Welcome to the Guild! We have a custom ct module (/ct import IEBridge) and a Guild only fragbot. You can use the fragbot by partying the bot and typing i!fr in Guild chat. Enjoy your stay! Also simp for Klaas :D")
+  } else if (msg.includes("2wfg &ejoined")) {
+    ChatLib.say("/gc wb 2wfg")
   }
 })
 
