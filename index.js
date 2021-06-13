@@ -12,10 +12,7 @@ function IEKeyBindsFunc() {
 
 	this.tick = function() {
 		if (this.key.isPressed()) {
-			ChatLib.command("party IceEssenceBot")
-			setTimeout(() => {
-				ChatLib.command("gc i!fr")
-			}, 500)
+			ChatLib.command("party IceEssenceBot2")
 		}
 	}
 }
@@ -64,7 +61,7 @@ register("chat", function(event) {
     //}
     ChatLib.chat(msg)
   } else if (msg.includes("&ejoined the guild!")) {
-    ChatLib.say("/gc Hello! Welcome to the Guild! We have a custom ct module (/ct import IEBridge) and a Guild only fragbot. You can use the fragbot by partying the bot and typing i!fr in Guild chat. Enjoy your stay! Also simp for Klaas :D")
+    ChatLib.say("/gc Hello! Welcome to the Guild! We have a custom ct module (/ct import IEBridge) and a Guild only fragbot. You can use the fragbot by partying IceEssenceBot2. Enjoy your stay! Also simp for Klaas :D")
   } else if (msg.includes("2wfg &ejoined")) {
     ChatLib.say("/gc wb 2wfg")
   }
@@ -80,36 +77,5 @@ register("command", (...args) => {
 }).setName("guild_join")
 
 register("command", () => {
-  ChatLib.say("/party IceEssenceBot")
-  setTimeout(() => {
-    ChatLib.say("/gc i!fr")
-  }, 500)
+  ChatLib.say("/party IceEssenceBot2")
 }).setName("icefrag")
-
-register("command", () => {
-  ChatLib.say("/party IceEssenceBot")
-  setTimeout(() => {
-    ChatLib.say("/gc i!fr Simp")
-  }, 500)
-}).setName("icefrag1")
-
-register("command", () => {
-  ChatLib.say("/party IceEssenceBot")
-  setTimeout(() => {
-    ChatLib.say("/gc i!fr Simp 4 Klaas :D")
-  }, 500)
-}).setName("icefrag2")
-
-register("command", () => {
-  ChatLib.say("/party IceEssenceBot")
-  setTimeout(() => {
-    ChatLib.say("/gc i!fr / / / / /")
-  }, 500)
-}).setName("icefrag3")
-
-register("command", () => {
-  ChatLib.say("/party IceEssenceBot")
-  setTimeout(() => {
-    ChatLib.say("/gc i!fr Simping for Klaas rn very pog")
-  }, 500)
-}).setName("icefrag4")
