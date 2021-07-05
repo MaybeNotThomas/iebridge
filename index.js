@@ -28,7 +28,7 @@ register("chat", function(event) {
       alon_ranks = JSON.parse(FileLib.getUrlContent("https://raw.githubusercontent.com/alon1396/AlonAddons/main/chatreplace.json"))
     }
     //guild bridge replace
-    msg = msg.replace("&r&2Guild > &a[VIP&6+&a] KlaasAlthaas &6[OFF]&f: &r","&2Guild Bridge > &7")
+    msg = msg.replace("&r&2Guild > &a[VIP] IceEssenceBot &6[OFF]&f: &r","&2Guild Bridge > &7")
     //replace dc name with in game name
     if (msg.removeFormatting().startsWith("Guild Bridge >")) {
       for (let key in names) {
