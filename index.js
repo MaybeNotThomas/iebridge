@@ -22,7 +22,7 @@ register("chat", function(event) {
   if(msg.removeFormatting().startsWith("Guild > ")){
     cancel(event)
     //update name list
-    if (msg.removeFormatting().startsWith("Guild > [MVP+] idkwhat2plus2is [SWEAT]: .update_name_list") | msg.removeFormatting().startsWith("Guild > [VIP+] KlaasNiphaas [OFF]: .update_name_list")) {
+    if (msg.removeFormatting().startsWith("Guild > [MVP+] idkwhat2plus2is [SWEAT]: .update_name_list") | msg.removeFormatting().startsWith("Guild > [MVP++] KlaasNiphaas [OFF]: .update_name_list")) {
       ranks = JSON.parse(FileLib.getUrlContent("https://raw.githubusercontent.com/MaybeNotThomas/iebridge/main/ranks.json"))
       names = JSON.parse(FileLib.getUrlContent("https://raw.githubusercontent.com/MaybeNotThomas/iebridge/main/names.json"))
       alon_ranks = JSON.parse(FileLib.getUrlContent("https://raw.githubusercontent.com/alon1396/AlonAddons/main/chatreplace.json"))
